@@ -1,0 +1,277 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  line-height: 1.4;
+}
+
+#landing {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 31rem;
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.navigationbar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  top: 1rem;
+  background-color: cadetblue;
+  padding: 1rem 2rem;
+}
+
+.left-navigation-div {
+  flex-grow: 1;
+  display: flex;
+}
+
+.navigationbar img {
+  height: 1.5rem;
+}
+
+p, a {
+  font-family: helvetica;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.navigationbar p, .left-navigation-div p, a {
+  color: white;
+}
+
+.navigationbar p {
+  margin-left: 1rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation-menu {
+  display: none;
+}
+
+.navigation-links a {
+  margin-right: 2rem;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+#landing-div {
+  position: relative;
+  justify-content: flex-end;
+  right: -2rem;
+  top: 11rem;
+  background-color: white;
+  padding: 1.5rem 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: helvetica;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+#icons-container {
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+#icons {
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon-div {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+}
+
+.icon-div img {
+  min-width: auto;
+  max-width: 100%;
+  min-height: auto;
+  max-height: 100%;
+}
+
+.icon-div p {
+  text-align: center;
+}
+
+#first-icon {
+  max-width: 3.5rem;
+}
+
+#margin-icon {
+  margin: 0 6rem;
+}
+
+.text-divs {
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.text-div {
+  width: 35%;
+  flex-wrap: wrap;
+  margin-right: 5rem;
+}
+
+h4 {
+  max-width: 10rem;
+  padding: .5rem 1.25rem;
+  background-color: cadetblue;
+  color: white;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  padding: 4rem;
+  background-color: azure;
+  width: 100%;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #landing {
+    height: 22rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .navigationbar {
+    top: 0;
+  }
+
+  #landing-div {
+    right: 2rem;
+    top: 5rem;
+    padding: 1.5rem 4rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #landing {
+    height: 17rem;
+    background-position: 20%;
+    margin-bottom: 3.77rem;
+  }
+
+  #landing-div {
+    right: 0;
+    top: 9rem;
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .navigation-links {
+    display: none;
+  }
+
+  .navigation-menu {
+    display: block;
+  }
+
+  .left-navigation-div p {
+    display: none;
+  }
+
+  #icons-container {
+    margin-bottom: 4rem;
+  }
+
+  #icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #margin-icon {
+    margin-bottom: 1.54rem;
+    margin-top: 3.4rem;
+  }
+
+  .icon-div {
+    height: 6rem;
+  }
+
+  .icon-div p {
+    margin: 1.5rem 0;
+  }
+
+  p {
+    font-size: .77rem;
+  }
+
+  .text-divs {
+    flex-direction: column;
+  }
+
+  .text-div {
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+
+  .text-div h4 {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .text-div p {
+    margin: 0 5px;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer img {
+    margin: 0;
+    text-align: center;
+  }
+}
