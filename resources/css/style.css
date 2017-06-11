@@ -156,3 +156,27 @@ footer img {
   height: 1.5rem;
   margin-right: 1rem;
 }
+
+@media only screen and (max-width: 1024px) {
+  #landing {
+    height: 22rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .navigationbar {
+    top: 0;
+  }
+
+  #landing-div {
+    right: 2rem;
+    top: 5rem;
+    padding: 1.5rem 4rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
